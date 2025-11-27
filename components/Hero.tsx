@@ -40,7 +40,8 @@ const Hero: React.FC = () => {
                 Let's Talk <ArrowRight size={18} />
               </a>
               <a
-                href="#"
+                href="/resume.pdf"
+                download="Abinesh_Muthu_Resume.pdf"
                 className="px-8 py-3 bg-slate-800 hover:bg-slate-700 text-white font-medium rounded-full transition-all flex items-center gap-2 border border-slate-700"
               >
                 Resume <Download size={18} />
