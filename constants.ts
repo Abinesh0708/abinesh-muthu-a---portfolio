@@ -59,7 +59,6 @@ export const EDUCATION: Education[] = [
 export const SKILLS = {
   programming: [
     { name: "Python", icon: Terminal },
-    { name: "JavaScript", icon: Code },
     { name: "HTML/CSS", icon: Globe },
     { name: "SQL / MySQL", icon: Database },
     { name: "Git & GitHub", icon: GitBranch },

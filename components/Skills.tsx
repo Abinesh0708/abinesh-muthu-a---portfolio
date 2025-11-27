@@ -7,9 +7,9 @@ const Skills: React.FC = () => {
   return (
     <SectionContainer id="skills" title="Technical Skills" subtitle="A comprehensive toolkit for modern engineering and development.">
       <div className="grid md:grid-cols-3 gap-8">
-        
+
         {/* Programming */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -32,14 +32,14 @@ const Skills: React.FC = () => {
         </motion.div>
 
         {/* Frameworks & Tools */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.1 }}
           className="bg-slate-900/50 p-6 rounded-2xl border border-slate-800 hover:border-brand-500/30 transition-colors"
         >
-           <h3 className="text-xl font-bold text-white mb-6 flex items-center gap-2">
+          <h3 className="text-xl font-bold text-white mb-6 flex items-center gap-2">
             <span className="w-2 h-8 bg-purple-500 rounded-full"></span>
             Frameworks & Tools
           </h3>
@@ -56,14 +56,14 @@ const Skills: React.FC = () => {
         </motion.div>
 
         {/* Core Competencies */}
-        <motion.div 
-           initial={{ opacity: 0, y: 20 }}
-           whileInView={{ opacity: 1, y: 0 }}
-           viewport={{ once: true }}
-           transition={{ delay: 0.2 }}
-           className="bg-slate-900/50 p-6 rounded-2xl border border-slate-800 hover:border-brand-500/30 transition-colors"
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.2 }}
+          className="bg-slate-900/50 p-6 rounded-2xl border border-slate-800 hover:border-brand-500/30 transition-colors"
         >
-           <h3 className="text-xl font-bold text-white mb-6 flex items-center gap-2">
+          <h3 className="text-xl font-bold text-white mb-6 flex items-center gap-2">
             <span className="w-2 h-8 bg-blue-500 rounded-full"></span>
             Core Competencies
           </h3>

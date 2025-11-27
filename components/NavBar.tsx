@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Menu, X, Github, Linkedin, Mail } from 'lucide-react';
 import { HERO_CONTENT } from '../constants';
 
+import logo from '@/imgs/prof.logo.png';
+
 const LINKS = [
   { name: 'About', href: '#about' },
   { name: 'Skills', href: '#skills' },
@@ -39,9 +41,9 @@ const NavBar: React.FC = () => {
             <a
               href="#hero"
               onClick={(e) => handleClick(e, '#hero')}
-              className="text-2xl font-display font-bold text-white tracking-tight"
+              className="flex items-center"
             >
-              AM<span className="text-brand-500">.</span>
+              <img src={logo} alt="Logo" className="h-10 w-auto" />
             </a>
           </div>
 

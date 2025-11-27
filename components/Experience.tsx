@@ -29,8 +29,9 @@ const Experience: React.FC = () => {
                 >
                   <span className="absolute -left-[41px] top-1 w-5 h-5 bg-slate-900 border-2 border-brand-500 rounded-full"></span>
                   <h4 className="text-xl font-bold text-white">{job.role}</h4>
-                  <div className="flex justify-between items-center mb-2">
+                  <div className="flex items-center gap-3 mb-2">
                     <span className="text-brand-400 font-medium">{job.company}</span>
+                    <span className="text-slate-600">•</span>
                     <span className="text-sm text-slate-500">{job.period}</span>
                   </div>
                   <p className="text-sm text-slate-500 mb-3">{job.location}</p>
