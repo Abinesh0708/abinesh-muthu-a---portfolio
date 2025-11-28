@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Download } from 'lucide-react';
 import { HERO_CONTENT } from '../constants';
+import homeImg from '../imgs/home-img.jpg';
 
 const Hero: React.FC = () => {
   return (
@@ -66,7 +67,7 @@ const Hero: React.FC = () => {
                  3. Change the src below to '/abinesh.jpg'
               */}
               <img
-                src="https://res.cloudinary.com/dbngupmgw/image/upload/v1764267380/Linkedin_-_profile_wml77g.jpg"
+                src={homeImg}
                 alt="Abinesh Muthu A"
                 className="rounded-2xl object-cover shadow-2xl border border-slate-800 relative z-10 w-full h-full"
               />
