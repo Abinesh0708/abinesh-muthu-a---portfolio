@@ -8,7 +8,7 @@ import './Projects.css';
 
 const Projects: React.FC = () => {
   return (
-    <SectionContainer id="projects" title="Projects">
+    <SectionContainer id="projects" title="Portfolio">
       <div className="w-full overflow-hidden">
         <div className="flex gap-8 overflow-x-auto pb-8 snap-x snap-mandatory scrollbar-hide">
           {PROJECTS.map((project, index) => (
