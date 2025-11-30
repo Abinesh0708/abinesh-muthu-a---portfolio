@@ -165,6 +165,153 @@ export const PROJECTS: Project[] = [
       "/imgs/gpay-ui-1.png",
       "/imgs/gpay-ui-2.png"
     ]
+  },
+  {
+    id: "organizo-task-tracker",
+    title: "Organizo – Smart Personal Task Tracker",
+    description: "A productivity app to help users stay organized effortlessly.",
+    tags: ["UI/UX Design", "Productivity", "Mobile App"],
+    image: "/imgs/organizo.png",
+    sections: [
+      {
+        title: "Project Overview",
+        content: "Organizo is a mobile task-management app designed to simplify planning and help users stay on top of their daily activities. The goal of the project was to create a clean, intuitive, and visually engaging interface that makes task tracking feel effortless. The design integrates a dark theme with vibrant gradients, offering both aesthetics and usability. The app includes essential productivity features such as categories, calendars, statistics, and user profile customization."
+      },
+      {
+        title: "Problem Statement",
+        content: [
+          "Most task-tracking apps are cluttered and overwhelming. Users struggle with:",
+          "• Too many features that slow them down",
+          "• Poor visual hierarchy",
+          "• Confusing navigation",
+          "• Lack of motivation to check or update tasks",
+          "The challenge was to create a minimal yet powerful tool that increases productivity without overwhelming the user."
+        ]
+      },
+      {
+        title: "Design Goals",
+        content: [
+          "1. Simple and Clean UI: Reduce complexity and present information clearly.",
+          "2. Powerful Categorization: Allow users to group tasks into meaningful sections.",
+          "3. Engaging Dark Theme + Gradient: Ensure comfortable usage, especially at night, while giving the app a bold visual identity.",
+          "4. Quick Navigation: Use a five-tab bottom bar for instant access to key features.",
+          "5. Visual Motivation: Provide streaks, stats, and progress tracking to keep users consistent."
+        ]
+      },
+      {
+        title: "User Flow",
+        content: [
+          "1. Onboarding → Dashboard: Users start with a welcoming screen and a clear CTA: Get Started.",
+          "2. Dashboard → Categories: They see high-level summaries and can explore categorized tasks.",
+          "3. Categories → Individual Task Lists: Each category contains tasks with status indicators.",
+          "4. Calendar → Daily Overview: A visual scheduler helps users plan tasks by date.",
+          "5. Statistics → Productivity Insights: Users track streaks, task completion rate, and weekly habits.",
+          "6. Profile → Personal Preferences: Theme switching, notification controls, and account settings."
+        ]
+      },
+      {
+        title: "UI Screens & Design Breakdown",
+        content: [
+          "1. Dashboard – “Stay Organized Effortlessly”",
+          "The dashboard acts as the hero screen, designed with:",
+          "• A deep purple-to-black gradient for a modern look",
+          "• A bold headline to set tone",
+          "• Clean subtext for quick context",
+          "• Soft-glow CTA button: Get Started",
+          "• A minimal bottom nav bar",
+          "This visual style builds trust and invites users into the experience.",
+          "2. Categories Screen",
+          "Key features:",
+          "• Six well-defined category cards",
+          "• Task count displayed under each category",
+          "• Rounded containers with soft borders",
+          "• Purple accents for hierarchy",
+          "Purpose: Help users quickly classify tasks to reduce mental load.",
+          "3. Task List (Work Category)",
+          "Highlights:",
+          "• Filter chips (Work, Study, Life, Priority) for fast sorting",
+          "• Checkbox system to mark task completion",
+          "• Colored indicators for task type or urgency",
+          "• Structured layout: Task title + Subtext description",
+          "This screen ensures users can manage individual tasks smoothly.",
+          "4. Calendar Screen",
+          "Features:",
+          "• Monthly calendar with highlighted selected date",
+          "• Horizontal navigation between months",
+          "• Daily timeline view showing scheduled activities",
+          "• Activity icons for quick recognition",
+          "• Smooth spacing and clear layout for time management",
+          "The layout encourages daily discipline and long-term planning.",
+          "5. Statistics Screen",
+          "What users see:",
+          "• Task completion metrics",
+          "• Overall productivity score",
+          "• Weekly charts",
+          "• Current streak (days of consistency)",
+          "• Graphs with soft curves matching the app’s visual identity",
+          "This screen keeps users motivated and helps them visualize improvement.",
+          "6. Profile Screen",
+          "Contains:",
+          "• Avatar illustration",
+          "• User membership badge (Premium User)",
+          "• Toggles for light/dark mode & notifications",
+          "• Account-related quick actions (Password, Subscription, Logout)",
+          "This customization empowers the user and builds trust."
+        ]
+      },
+      {
+        title: "Visual Design System",
+        content: [
+          "Color Palette",
+          "• Dark Black: #0E0E11",
+          "• Purple Gradient: #6D28D9 → #9333EA",
+          "• White for text: #FFFFFF",
+          "• Accent Green: #32FF9C (for completion status)",
+          "Typography",
+          "• Bold, geometric sans-serif",
+          "• Clear hierarchy between titles, subtitles, and small labels",
+          "Iconography",
+          "• Linear, modern icons",
+          "• Universal symbols for calendar, tasks, profile, etc.",
+          "Spacing & Layout",
+          "• Generous padding",
+          "• Rounded corners for soft, approachable feel",
+          "• Balanced visual weight across elements"
+        ]
+      },
+      {
+        title: "UX Decisions & Rationale",
+        content: [
+          "Dark Theme First: Chosen to reduce eye strain and give a premium feel.",
+          "Gradient Usage: Purple gradients convey creativity, focus, and calm.",
+          "Clear Navigation: The bottom bar ensures users can access all core features instantly.",
+          "Quick Actions (Create Todo / Create Category): Floating buttons simplify interactions and reduce user effort.",
+          "Progress Motivation: Streaks, stats, and weekly habits are proven methods to encourage consistency."
+        ]
+      },
+      {
+        title: "Final Outcome",
+        content: [
+          "Organizo successfully delivers a clean, intuitive, and powerful task-tracking experience.",
+          "The UI feels modern, while the UX ensures the app remains simple for everyday use.",
+          "This project showcases:",
+          "✔ Strong visual design",
+          "✔ Thoughtful interaction patterns",
+          "✔ Focus on usability",
+          "✔ Cohesive branding",
+          "✔ Clear information architecture",
+          "Perfect for demonstrating your UI/UX expertise in mobile productivity apps."
+        ]
+      },
+      {
+        title: "Conclusion",
+        content: "Organizo solves the clutter and overwhelm found in traditional task apps by offering a beautiful, focused, and functional design system. The final experience empowers users to stay productive with ease while enjoying a premium, dark-themed interface."
+      }
+    ],
+    gallery: [
+      "/imgs/organizo-ui-1.png",
+      "/imgs/organizo-ui-2.png"
+    ]
   }
 ];
 
