@@ -5,9 +5,12 @@ import Home from './components/Home';
 import ProjectDetails from './components/ProjectDetails';
 import Contact from './components/Contact';
 
+import ScrollToTop from './components/ScrollToTop';
+
 const App: React.FC = () => {
   return (
     <Router>
+      <ScrollToTop />
       <div className="min-h-screen bg-slate-950 text-slate-300">
         <NavBar />
         <main>

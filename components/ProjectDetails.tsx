@@ -10,6 +10,10 @@ const ProjectDetails: React.FC = () => {
     const project = PROJECTS.find((p) => p.id === id);
     const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     if (!project) {
         return (
             <div className="min-h-screen flex items-center justify-center text-slate-300">
