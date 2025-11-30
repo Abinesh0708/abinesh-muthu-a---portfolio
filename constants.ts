@@ -12,7 +12,7 @@ import {
 
 export const HERO_CONTENT = {
   name: "Abinesh Muthu A",
-  title: "Product Designer and Machine Learning Dev",
+  title: "Product Designer",
   tagline: "Building intelligent systems, meaningful digital experiences, and innovative solutions.",
   description: "Aspiring Mechanical Engineer, ML researcher, and full-stack developer passionate about solving real-world problems through technology.",
   location: "Tirunelveli, Tamil Nadu",
