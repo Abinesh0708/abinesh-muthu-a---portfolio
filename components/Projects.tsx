@@ -3,28 +3,26 @@ import SectionContainer from './SectionContainer';
 import { PROJECTS } from '../constants';
 import { motion } from 'framer-motion';
 import { ArrowUpRight, Github } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import './Projects.css';
 
 const Projects: React.FC = () => {
-  // Duplicate projects to create seamless loop
-  const scrollingProjects = [...PROJECTS, ...PROJECTS];
-
   return (
     <SectionContainer id="projects" title="Projects" subtitle="Selected works showcasing ML, Development, and Engineering.">
       <div className="w-full overflow-hidden">
-        <div className="flex gap-8 animate-scroll w-max hover:[animation-play-state:paused]">
-          {scrollingProjects.map((project, index) => (
+        <div className="flex gap-8 overflow-x-auto pb-8 snap-x snap-mandatory scrollbar-hide">
+          {PROJECTS.map((project, index) => (
             <motion.div
               key={`${index}-${project.title}`}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="group relative bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-brand-500/50 transition-all duration-300 w-[400px] flex-shrink-0"
+              className="group relative bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-brand-500/50 transition-all duration-300 w-[400px] flex-shrink-0 snap-center"
             >
               <div className="h-48 overflow-hidden bg-slate-800 relative">
                 <img
-                  src={`https://picsum.photos/seed/${index + 12}/600/400`}
+                  src={project.image || `https://picsum.photos/seed/${index + 12}/600/400`}
                   alt={project.title}
                   className="w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
                 />
@@ -48,10 +46,12 @@ const Projects: React.FC = () => {
                 </div>
 
                 <div className="flex gap-4">
-                  {/* Placeholder buttons as no specific links provided in text */}
-                  <button className="text-sm font-medium text-white flex items-center gap-1 hover:text-brand-400 transition-colors">
+                  <Link
+                    to={`/project/${project.id}`}
+                    className="text-sm font-medium text-white flex items-center gap-1 hover:text-brand-400 transition-colors"
+                  >
                     View Details <ArrowUpRight size={16} />
-                  </button>
+                  </Link>
                   <button className="text-sm font-medium text-slate-400 flex items-center gap-1 hover:text-white transition-colors">
                     <Github size={16} /> Code
                   </button>

@@ -1,8 +1,17 @@
+export interface ProjectSection {
+  title: string;
+  content: string | string[];
+}
+
 export interface Project {
+  id: string;
   title: string;
   description: string;
   tags?: string[];
   link?: string;
+  image?: string;
+  sections?: ProjectSection[];
+  gallery?: string[];
 }
 
 export interface Experience {

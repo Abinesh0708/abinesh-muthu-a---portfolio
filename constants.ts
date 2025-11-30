@@ -80,24 +80,91 @@ export const SKILLS = {
 
 export const PROJECTS: Project[] = [
   {
-    title: "Generative AI Chatbot",
-    description: "Built an interactive chatbot integrating OpenAI APIs and Hugging Face to deliver conversational AI experiences.",
-    tags: ["Python", "OpenAI API", "Hugging Face", "AI"]
-  },
-  {
-    title: "Podcast Generator (Speech Synthesis)",
-    description: "Developed an AI-driven text-to-speech application that converts input text into generated podcasts automatically.",
-    tags: ["AI", "Speech Synthesis", "Python", "Audio Processing"]
-  },
-  {
-    title: "ML for Alloy Optimization",
-    description: "Implemented ML models including SVM, Decision Tree, Random Forest, and XGBoost to predict martensite start temperature (Ms) for Cu–Al–Mn SMA alloy design.",
-    tags: ["Machine Learning", "SVM", "XGBoost", "Materials Science"]
-  },
-  {
-    title: "Starch-Based Bioplastic Research",
-    description: "Conducted R&D on eco-friendly, starch-based bioplastics with a focus on sustainable material formulation and application.",
-    tags: ["R&D", "Sustainability", "Material Science"]
+    id: "google-pay-redesign",
+    title: "Google Pay Redesign",
+    description: "A comprehensive redesign of the Google Pay interface, focusing on enhanced user experience, intuitive navigation, and a modern aesthetic. This project reimagines the payment flow to be more seamless and visually engaging.",
+    tags: ["UI/UX Design", "Figma", "Mobile App"],
+    image: "/imgs/google-pay.png",
+    sections: [
+      {
+        title: "Project Overview",
+        content: "This project focuses on redesigning the Google Pay home screen to create a more visually engaging, intuitive, and structured money-management experience. The goal was to reduce clutter, improve feature discoverability, and introduce a modern aesthetic that enhances user comfort and confidence while performing financial activities."
+      },
+      {
+        title: "Problem Statement",
+        content: [
+          "Though Google Pay is widely used, its home screen contains dense content and inconsistent spacing that can feel overwhelming to users. Important features like People, Bills, and Recharge often get visually crowded, reducing the ease of navigation.",
+          "The redesign aims to solve:",
+          "• Lack of visual hierarchy",
+          "• Overly compact layout",
+          "• Low personalization",
+          "• Limited emotional touch",
+          "• Repetitive icons and grouping"
+        ]
+      },
+      {
+        title: "UX Goals",
+        content: [
+          "• Improve readability with clear visual spacing",
+          "• Build stronger hierarchy to guide user flow",
+          "• Create a calming interface with theme-based design",
+          "• Highlight essential features for faster actions",
+          "• Make the UI feel personal and warm rather than utility-heavy"
+        ]
+      },
+      {
+        title: "Design Decisions",
+        content: [
+          "✔ 4.1 Background & Personalization",
+          "A calm sunset-themed artwork was added to bring emotional warmth. This gives the payment app a modern, premium feel and breaks the monotony of flat dark background.",
+          "✔ 4.2 Action Button Improvements",
+          "Quick actions like Scan QR, Pay Anyone, Bank Transfer, Mobile Recharge are redesigned with:",
+          "• Modern gradient icons",
+          "• Increased spacing",
+          "• Uniform card-style backgrounds",
+          "• Better recognizability",
+          "✔ 4.3 People Section Optimization",
+          "The contacts area was redesigned with:",
+          "• Larger initials",
+          "• Clean circular shape",
+          "• Better spacing between users",
+          "• Consistent typography",
+          "This improves scanning speed and reduces visual stress.",
+          "✔ 4.4 Bills & Recharge Section",
+          "All service icons are grouped with better structure:",
+          "• Mobile Recharge",
+          "• DTH / Cable TV",
+          "• Electricity",
+          "• Broadband / Landline",
+          "Each icon is visually balanced and aligned under a clear category heading."
+        ]
+      },
+      {
+        title: "UI Enhancements",
+        content: [
+          "• Rounded cards for improved friendliness",
+          "• Consistent shadow depth to create layering",
+          "• Well-defined spacing rules for a premium look",
+          "• Smooth color gradients for icons",
+          "• Clean typography for readability"
+        ]
+      },
+      {
+        title: "Outcome",
+        content: [
+          "The redesigned Google Pay interface feels:",
+          "• More modern",
+          "• More breathable",
+          "• More emotionally appealing",
+          "• Easier to scan",
+          "• Better structured for daily usage"
+        ]
+      }
+    ],
+    gallery: [
+      "/imgs/gpay-ui-1.png",
+      "/imgs/gpay-ui-2.png"
+    ]
   }
 ];
 
