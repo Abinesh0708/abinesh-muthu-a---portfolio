@@ -18,8 +18,8 @@ return (
             </Link>
 
             <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
                 className="bg-slate-900/50 border border-slate-800 rounded-2xl overflow-hidden"
             >
                 {project.image && (
