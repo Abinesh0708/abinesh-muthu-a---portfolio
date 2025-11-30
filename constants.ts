@@ -13,7 +13,7 @@ import {
 export const HERO_CONTENT = {
   name: "Abinesh Muthu A",
   title: "Product Designer",
-  tagline: "Building intelligent systems, meaningful digital experiences, and innovative solutions.",
+  tagline: "I transform complex ideas into simple, user-first interfaces through thoughtful research, design strategy, and visual clarity.",
   description: "Aspiring Mechanical Engineer, ML researcher, and full-stack developer passionate about solving real-world problems through technology.",
   location: "Tirunelveli, Tamil Nadu",
   email: "abineshmuthua@gmail.com",
