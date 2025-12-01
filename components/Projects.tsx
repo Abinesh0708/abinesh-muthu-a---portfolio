@@ -4,13 +4,13 @@ import { PROJECTS } from '../constants';
 import { motion } from 'framer-motion';
 import { ArrowUpRight, Github } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import './Projects.css';
+
 
 const Projects: React.FC = () => {
   return (
     <SectionContainer id="projects" title="Portfolio">
-      <div className="w-full overflow-hidden">
-        <div className="flex gap-8 overflow-x-auto pb-8 snap-x snap-mandatory scrollbar-hide">
+      <div className="w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {PROJECTS.map((project, index) => (
             <motion.div
               key={`${index}-${project.title}`}
@@ -18,7 +18,7 @@ const Projects: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="group relative bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-brand-500/50 transition-all duration-300 w-[400px] flex-shrink-0 snap-center"
+              className="group relative bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-brand-500/50 transition-all duration-300 flex flex-col"
             >
               <div className="h-48 overflow-hidden bg-slate-800 relative">
                 <img

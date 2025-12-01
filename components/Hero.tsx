@@ -54,7 +54,7 @@ const Hero: React.FC = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative hidden md:block"
+            className="relative block"
           >
             <div className="relative w-full aspect-[3/4] max-w-sm mx-auto">
               {/* Decorative background glow */}
@@ -72,7 +72,7 @@ const Hero: React.FC = () => {
                 className="rounded-2xl object-cover shadow-2xl border border-slate-800 relative z-10 w-full h-full"
               />
 
-              <div className="absolute -bottom-6 -right-6 z-20 bg-slate-900 p-4 rounded-xl border border-slate-800 shadow-xl">
+              <div className="absolute bottom-4 right-4 md:-bottom-6 md:-right-6 z-20 bg-slate-900 p-4 rounded-xl border border-slate-800 shadow-xl">
                 <div className="flex items-center gap-3">
                   <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
                   <span className="text-sm font-medium text-white">Open to Opportunities</span>
