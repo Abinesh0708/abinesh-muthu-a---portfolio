@@ -3,10 +3,12 @@ import SectionContainer from './SectionContainer';
 import { PROJECTS } from '../constants';
 import { motion } from 'framer-motion';
 import { ArrowUpRight, Github } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 const Projects: React.FC = () => {
+  const navigate = useNavigate();
+
   return (
     <SectionContainer id="projects" title="Portfolio">
       <div className="w-full">
@@ -18,7 +20,8 @@ const Projects: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="group relative bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-brand-500/50 transition-all duration-300 flex flex-col"
+              onClick={() => navigate(`/project/${project.id}`)}
+              className="group relative bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-brand-500/50 transition-all duration-300 flex flex-col cursor-pointer"
             >
               <div className="h-48 overflow-hidden bg-slate-800 relative">
                 <img
@@ -45,14 +48,16 @@ const Projects: React.FC = () => {
                   ))}
                 </div>
 
-                <div className="flex gap-4">
-                  <Link
-                    to={`/project/${project.id}`}
+                <div className="flex gap-4 relative z-20">
+                  <span
                     className="text-sm font-medium text-white flex items-center gap-1 hover:text-brand-400 transition-colors"
                   >
                     View Details <ArrowUpRight size={16} />
-                  </Link>
-                  <button className="text-sm font-medium text-slate-400 flex items-center gap-1 hover:text-white transition-colors">
+                  </span>
+                  <button
+                    onClick={(e) => e.stopPropagation()}
+                    className="text-sm font-medium text-slate-400 flex items-center gap-1 hover:text-white transition-colors"
+                  >
                     <Github size={16} /> Code
                   </button>
                 </div>

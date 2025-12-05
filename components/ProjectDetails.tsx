@@ -30,7 +30,7 @@ const ProjectDetails: React.FC = () => {
     return (
         <div className="pt-24 pb-16 min-h-screen">
             <SectionContainer id="project-details" title={project.title} subtitle="Project Details">
-                <Link to="/" className="inline-flex items-center gap-2 text-slate-400 hover:text-brand-400 mb-8 transition-colors">
+                <Link to="/#projects" className="inline-flex items-center gap-2 text-slate-400 hover:text-brand-400 mb-8 transition-colors">
                     <ArrowLeft size={20} /> Back to Projects
                 </Link>
 

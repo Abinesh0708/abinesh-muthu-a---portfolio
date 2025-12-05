@@ -36,12 +36,7 @@ export const EDUCATION: Education[] = [
     details: "CGPA: 7.5",
     period: "2022–2026"
   },
-  {
-    degree: "Full Stack Development Program",
-    institution: "NxtWave CCBP 4.0 Academy",
-    details: "Ongoing Specialized Training",
-    period: "Ongoing"
-  },
+
   {
     degree: "HSC",
     institution: "Balakrishna Matriculation Hr. Sec. School, Vadakkankulam",
@@ -311,6 +306,97 @@ export const PROJECTS: Project[] = [
     gallery: [
       "/imgs/organizo-ui-1.png",
       "/imgs/organizo-ui-2.png"
+    ]
+  },
+  {
+    id: "tech-innovators",
+    title: "Web Design",
+    description: "A corporate landing page design for a tech consultancy firm, focusing on modern aesthetics and clear service presentation.",
+    tags: ["UI/UX Design", "Web Design", "Corporate"],
+    image: "/imgs/tech-innovators.png",
+    sections: [
+      {
+        title: "Project Overview",
+        content: "The goal of this project was to design a modern, clean, and professional website for an IT solutions company. The website includes three core pages: Landing Page (Company overview, expertise, case studies, testimonials), About Page (Company journey, core values, leadership), and Services Page (Full list of expert IT services). The focus was on creating a trust-building, easy-to-navigate, and visually consistent interface that highlights the company’s strengths and enhances user credibility."
+      },
+      {
+        title: "Problem Statement",
+        content: [
+          "Many IT service websites are overloaded with content and lack a clear structure. Users often find it difficult to:",
+          "• Understand the company’s offerings quickly",
+          "• Trust the brand due to outdated design",
+          "• Navigate between different sections",
+          "• Get essential information without scrolling too much",
+          "This project aims to solve these challenges through a minimal, structured, and user-friendly design approach."
+        ]
+      },
+      {
+        title: "UX Goals",
+        content: [
+          "• Make the website simple, intuitive, and information-focused",
+          "• Increase trust and brand value through visual consistency",
+          "• Organize services and expertise in a way that’s easily digestible",
+          "• Improve user decision-making by placing CTAs strategically",
+          "• Ensure readability and visual hierarchy across all pages"
+        ]
+      },
+      {
+        title: "Research Summary",
+        content: [
+          "Target Users:",
+          "• Business owners looking for IT solutions",
+          "• Startup founders needing digital transformation",
+          "• IT procurement managers evaluating vendors",
+          "• Enterprise clients searching for specialized services",
+          "User Needs Identified:",
+          "• ✔ Clear explanation of services",
+          "• ✔ Visible company credibility (experience, values, leadership)",
+          "• ✔ Proof of work (case studies, testimonials)",
+          "• ✔ A quick way to contact or hire the company"
+        ]
+      },
+      {
+        title: "Information Architecture",
+        content: [
+          "The website follows a clean IA structure:",
+          "Home → Expertise → Featured Services → Case Studies → Testimonials → CTA (Get Started)",
+          "About Page → Company Intro → Journey Timeline → Core Values → Leadership Section → Footer Navigation",
+          "Services Page → Individual service cards → Short descriptions for easier scanning → CTA to contact → Footer",
+          "This structure reduces cognitive load and ensures clarity."
+        ]
+      },
+      {
+        title: "Wireframing",
+        content: [
+          "Low-fidelity wireframes were used to plan:",
+          "• Page hierarchy",
+          "• Section spacing",
+          "• CTA positioning",
+          "• Content distribution",
+          "Focus was placed on white space, balance, and readability."
+        ]
+      },
+      {
+        title: "UI Design Decisions",
+        content: [
+          "Color Palette:",
+          "• White + Light Gray: Clean, modern, professional",
+          "• Purple Accent: Premium, tech-forward, attention-grabbing",
+          "Typography:",
+          "• Clear sans-serif fonts for high readability",
+          "• Large headings to create strong hierarchy",
+          "• Comfortable line spacing for long-form content",
+          "Components Used:",
+          "• Cards for services and team members",
+          "• Hero section with soft gradients and abstract 3D shapes",
+          "• Rounded CTAs for modern aesthetic",
+          "• Consistent spacing & grid"
+        ]
+      }
+    ],
+    gallery: [
+      "/imgs/web-design-1.png",
+      "/imgs/web-design-2.png"
     ]
   }
 ];
