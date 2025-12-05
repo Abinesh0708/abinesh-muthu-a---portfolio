@@ -159,7 +159,8 @@ export const PROJECTS: Project[] = [
     gallery: [
       "/imgs/gpay-ui-1.png",
       "/imgs/gpay-ui-2.png"
-    ]
+    ],
+    sourceCode: "https://github.com/Abinesh0708"
   },
   {
     id: "organizo-task-tracker",

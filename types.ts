@@ -12,6 +12,7 @@ export interface Project {
   image?: string;
   sections?: ProjectSection[];
   gallery?: string[];
+  sourceCode?: string;
 }
 
 export interface Experience {

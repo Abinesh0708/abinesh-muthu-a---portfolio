@@ -54,12 +54,17 @@ const Projects: React.FC = () => {
                   >
                     View Details <ArrowUpRight size={16} />
                   </span>
-                  <button
-                    onClick={(e) => e.stopPropagation()}
-                    className="text-sm font-medium text-slate-400 flex items-center gap-1 hover:text-white transition-colors"
-                  >
-                    <Github size={16} /> Code
-                  </button>
+                  {project.sourceCode && (
+                    <a
+                      href={project.sourceCode}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                      className="text-sm font-medium text-slate-400 flex items-center gap-1 hover:text-white transition-colors"
+                    >
+                      <Github size={16} /> Code
+                    </a>
+                  )}
                 </div>
               </div>
             </motion.div>
