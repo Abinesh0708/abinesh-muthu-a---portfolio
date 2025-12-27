@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Download } from 'lucide-react';
 import { HERO_CONTENT } from '../constants';
-import homeImg from '../imgs/home-img.jpg';
+import homeImg from '../imgs/hero-profile.png';
 
 const Hero: React.FC = () => {
   return (
@@ -58,18 +58,13 @@ const Hero: React.FC = () => {
           >
             <div className="relative w-full aspect-[3/4] max-w-sm mx-auto">
               {/* Decorative background glow */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-brand-500/20 to-purple-500/20 rounded-2xl animate-pulse blur-xl transform rotate-3"></div>
+              <div className="absolute inset-0 bg-brand-500/20 rounded-2xl blur-2xl"></div>
 
-              {/* 
-                 TODO: To use your own image:
-                 1. Rename your photo to 'abinesh.jpg' (or similar)
-                 2. Place it in the 'public' folder of your project
-                 3. Change the src below to '/abinesh.jpg'
-              */}
+
               <img
                 src={homeImg}
                 alt="Abinesh Muthu A"
-                className="rounded-2xl object-cover shadow-2xl border border-slate-800 relative z-10 w-full h-full"
+                className="rounded-2xl object-cover shadow-[0_0_30px_rgba(59,130,246,0.5)] border border-slate-800 relative z-10 w-full h-full"
               />
 
               <div className="absolute bottom-4 right-4 md:-bottom-6 md:-right-6 z-20 bg-slate-900 p-4 rounded-xl border border-slate-800 shadow-xl">
